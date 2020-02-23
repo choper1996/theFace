@@ -1,0 +1,58 @@
+.clients {
+  padding-bottom: 65px;
+
+  &__title-wrapper {
+    display: flex;
+    justify-content: center;
+
+    h2 {
+      margin-bottom: 125px;
+    }
+  }
+
+  &__slider {
+    margin-bottom: 0!important;
+
+    .slide  {
+      text-align: center;
+      height: 60px;
+      display: flex!important;
+
+      img {
+        margin: auto;
+      }
+    }
+  }
+
+  &__dots {
+    margin-top: 60px;
+    display: block;
+    text-align: center;
+
+    li {
+      cursor: pointer;
+      display: inline-block;
+      margin-right: 20px;
+      background-color: #456789;
+      width: 10px;
+      height: 10px;
+      overflow: hidden;
+      border-radius: 100px;
+      opacity: .3;
+      transition: .3s;
+
+      &.slick-active {
+        opacity: 1;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      button {
+        cursor: pointer;
+        opacity: 0;
+      }
+    }
+  }
+}

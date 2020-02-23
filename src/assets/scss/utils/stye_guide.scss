@@ -1,0 +1,59 @@
+h2 {
+  font-size: 21px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    @extend .line;
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    z-index: -1;
+  }
+}
+
+.line {
+  width: 55px;
+  height: 10px;
+  background-color: $gold;
+  content: '';
+}
+
+.paragraph {
+  max-width: 500px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+section {
+  padding-bottom: 150px;
+}
+
+.aside-block {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  transform-origin: bottom center;
+  transform: rotate(90deg);
+
+  &__text {
+    line-height: 140px;
+    color: $gold;
+    font-size: 200px;
+    font-weight: 800;
+  }
+
+  &__sub-text {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 800;
+    position: absolute;
+    bottom: -35px;
+    left: 35px;
+  }
+}

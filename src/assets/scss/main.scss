@@ -1,0 +1,19 @@
+@import "utils/reset";
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/stye_guide";
+
+@import "modules/header";
+@import "modules/footer";
+@import "modules/wrapper";
+@import "modules/aside";
+
+@import "sections/hero";
+@import "sections/about";
+@import "sections/results";
+@import "sections/which";
+@import "sections/ways";
+@import "sections/clients";
+@import "sections/contacts";

@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 23px 0;
+  z-index: 2;
+  background-color: #fff;
+
+  .container {
+    padding-right: 160px;
+  }
+
+  a {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #111111;
+    transition: .2s;
+
+    &:hover {
+      color: #456789;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      margin-right: 20px  ;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+

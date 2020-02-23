@@ -1,0 +1,56 @@
+.aside {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+
+  .container {
+    position: relative;
+  }
+
+  &__list-wrapper {
+    background-color: $gold;
+    position: absolute;
+    right: 0;
+    width: 100px;
+    padding: 10px 0;
+    height: 532px;
+  }
+
+  a {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #111111;
+    transition: .2s;
+
+    &:hover {
+      color: #456789;
+    }
+  }
+
+  &__languages-list li {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__socials-list {
+    position: absolute;
+    width: 320px;
+    transform-origin: left bottom;
+    left: 50%;
+    bottom: 0;
+    transform: rotate(90deg) translate(calc(-100% - 60px), 50%);
+
+    li {
+      display: inline-block;
+      margin-right: 35px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
